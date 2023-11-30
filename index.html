@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="47d1c5ce-460c-434d-8cc7-0318d7d02a9d" ></script>
+  <script nonce="xjDriczlQPXM2wgaQUaGTFkmCzQ8Tzd0R9wsM6hcad4=">
+//<![CDATA[
+
+    function OptanonWrapper() { }
+
+//]]>
+</script>
+<script nonce="xjDriczlQPXM2wgaQUaGTFkmCzQ8Tzd0R9wsM6hcad4=">
+//<![CDATA[
+
+        window._trackJs = { token: 'e43bb3a0b11a469ba1ef2ec2b79c6b11', application: 'acclaim-production', version: '236bfc80925a3e53f56cc18aaa790a4da20f773d'};
+
+//]]>
+</script><script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
+
+  <script nonce="xjDriczlQPXM2wgaQUaGTFkmCzQ8Tzd0R9wsM6hcad4=">
+//<![CDATA[
+
+    window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(14),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(15),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7);t("loader").features.stn=!0,t(6);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(16)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(16)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",s)}function i(t){w.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(11),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(13),m=window.XMLHttpRequest;s.features.xhr=!0,t(9),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(14),a=t(15);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],14:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],15:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],16:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(15),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(14),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(14),f=window,u=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var d=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-943.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,10,4,3]);
+    ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"01577753b5",applicationID:"1891511",sa:1}
+
+//]]>
+</script>
+<script nonce="xjDriczlQPXM2wgaQUaGTFkmCzQ8Tzd0R9wsM6hcad4=">
+//<![CDATA[
+
+    (function(apiKey){
+      (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+        v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w < x;++w)(function(m){
+        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+    })("65460ef3-56d0-45a3-7b3b-fe1ec0463054")
+
+//]]>
+</script>
+<meta content="Cisco verifies the earner of this badge successfully completed the Ethical Hacker course. The holder of this student level credential has a broad understanding of the legal and compliance requirements and is proficient in the art of scoping, executing, reporting vulnerability assessments, and recommending mitigation strategies. The holder has completed up to 34 hands-on activities using Kali Linux, WebSploit, and other tools." data-rh name="description">
+<meta content="Credly, Credly badges, Acclaim, open badges, digital badges, badges, web-enabled credentials, Badge Alliance, Mozilla Open Badge standards, Mozilla Open Badges, verified credentials, learning outcomes" name="keywords">
+<meta content="width=device-width" name="viewport">
+<meta content="1B97012E4CB3B07611090D1A0B4D9D19" name="msvalidate.01">
+<meta content="d20lZjrSJJ_n0jc1HHlADZBDmn5wZfiBDucFzzOzHCY" name="google-site-verification">
+<meta property="og:title" content="Ethical Hacker was issued by Cisco to RAHUL KUMAR R.">
+<meta property="og:image" content="https://images.credly.com/images/242902b5-f527-42ad-865e-977c9e1b5b58/linkedin_thumb_image.png">
+<meta property="og:description" content="Cisco verifies the earner of this badge successfully completed the Ethical Hacker course. The holder of this student level credential has a broad understanding of the legal and compliance requirements and is proficient in the art of scoping, executing, reporting vulnerability assessments, and recommending mitigation strategies. The holder has completed up to 34 hands-on activities using Kali Linux, WebSploit, and other tools.">
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="@Credly">
+<meta property="twitter:image" content="https://images.credly.com/images/242902b5-f527-42ad-865e-977c9e1b5b58/twitter_thumb_201604_image.png">
+<meta property="og:type" content="og:object">
+<meta property="og:url" content="https://www.credly.com/badges/842cfad1-67af-4ebc-9103-23b8218ca82d">
+<meta property="og:site_name" content="Credly">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="jyvnZAOiHTIZKqqokwMhE2c0O3RI6ecXuijHkLSkviexeRaBY613MCE0IjNN_YCKIKbO49gNNpK8jp1C21UKUg" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" />
+<link rel="stylesheet" media="all" href="//use.typekit.net/bcc0eop.css" />
+<script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-5D8QQR0C2M"></script>
+<script nonce="xjDriczlQPXM2wgaQUaGTFkmCzQ8Tzd0R9wsM6hcad4=">
+//<![CDATA[
+window.dataLayer = window.dataLayer || [];
+function google_tag(){dataLayer.push(arguments);}
+google_tag('js', new Date());
+google_tag('config', 'G-5D8QQR0C2M');
+(function() {
+var tests = [];
+for (var k in {}) {tests.push(k);}
+google_tag('set', 'dimension1', tests.join(';'));
+})();
+google_tag('send', 'pageview');
+
+//]]>
+</script><title>Ethical Hacker - Credly</title>
+<link rel="stylesheet" media="all" href="https://cdn.credly.com/assets/transitional-be34fed280560d1f0028094693f906f63634f2916de1d42d83b972ed440fd9ab.css" />
+<link rel="stylesheet" media="all" href="https://cdn.credly.com/packs/css/styles-d40c8d16-1_0.chunk.css" />
+<script src="https://cdn.credly.com/packs/js/styles-ea98b6f502c27d0ce578-1_0.chunk.js" crossorigin="anonymous"></script>
+<!-- = inline_javascript_tag do -->
+<!-- (window.webpackJsonp=window.webpackJsonp||[]).push([[0],[]]); -->
+</head>
+<body>
+<script>
+  if (!Object.values) {
+    document.write('<script src="https://cdn.credly.com/packs/js/ie_polyfills-ef553de51b0019f15f53-1_0.js" crossorigin="anonymous"><\/script>')
+  }
+</script>
+<script nonce="xjDriczlQPXM2wgaQUaGTFkmCzQ8Tzd0R9wsM6hcad4=">
+//<![CDATA[
+setTimeout(function(){pendo.initialize({"visitor":{},"account":{}});}, 1000)
+
+//]]>
+</script><header class="transitional" id="website-header" style="">
+<div class="website-header-main-links-container website-header-placeholder"></div>
+<div>
+<a href="#skip-target" id="skip-to-content">Skip to content</a>
+</div>
+<div class="website-header-main-links-container non-react-header">
+<div class="grid website-header-main-links">
+<a class="acclaim-logo" href="https://www.credly.com/">Credly</a>
+<nav data-behavior="container" name="main_navigation">
+<div class="header-nav-item header-nav-item--btn-container header-nav-item--btn-container--create-account-btn-container">
+<a class="create-account-btn button white" href="/users/sign_up">
+Create Account
+</a>
+
+</div>
+<div class="header-nav-item header-nav-item--btn-container header-nav-item--btn-container--sign-in-btn-container">
+<a class="sign-in-btn button" href="/users/sign_in">
+Sign In
+</a>
+
+</div>
+</nav>
+</div>
+</div>
+
+</header>
+<div class="search-bar" data-container="search-bar"></div>
+<div class="badges" id="flash">
+<div class="grid">
+<div class="l1-0 r1-0" data-behavior="flash-container">
+<noscript>
+<div class="flash notice">
+<i class="icon-error"></i>
+<div>
+We've detected that your browser has JavaScript disabled. Some features of Credly require Javascript to be enabled. For the best experience, please enable JavaScript in your browser settings or try using a different browser.
+</div>
+</div>
+</noscript>
+
+</div>
+</div>
+</div>
+<main id="root">
+<div class="cr-badge-banner-layout">
+<div class="cr-badge-banner-layout__inner-container container">
+<div class="cr-badge-banner-layout__section cr-badge-banner-layout__section-image">
+<div class="cr-badge-banner-image">
+<svg class="cr-badge-banner-image__icon cr-badge-banner-image__icon--missing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M313.6 288c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4zM416 464c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16v-41.6C32 365.9 77.9 320 134.4 320c19.6 0 39.1 16 89.6 16 50.4 0 70-16 89.6-16 56.5 0 102.4 45.9 102.4 102.4V464zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm0-224c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"/></svg>
+</div>
+
+</div>
+<div class="cr-badge-banner-layout__section cr-badge-banner-layout__section-instructions">
+<p class="cr-badge-banner-issued-to-text">
+This badge was issued to
+<a href="/users/rahul-kumar-r.d421c522">Srikanth T</a>
+on 01 Nov 2023.
+</p>
+</div>
+</div>
+</div>
+
+<div class="cr-public-badge-details container">
+<div class="cr-public-badge-details__body">
+<div class="cr-badges-full-badge row">
+<div class="cr-badges-full-badge__sidebar col-12 col-md-4">
+<img class="cr-badges-full-badge__img" alt="Ethical Hacker" src="https://images.credly.com/images/242902b5-f527-42ad-865e-977c9e1b5b58/image.png" />
+<ul class="cr-badges-template-attributes cr-badges-template-attributes--normal hide-mobile">
+<li class="cr-badges-template-attributes__item">
+<span class="cr-badges-template-attributes__label">
+Type
+</span>
+<span class="cr-badges-template-attributes__value">
+Learning
+</span>
+</li>
+<li class="cr-badges-template-attributes__item">
+<span class="cr-badges-template-attributes__label">
+Level
+</span>
+<span class="cr-badges-template-attributes__value">
+Intermediate
+</span>
+</li>
+</ul>
+
+<a class="cr-badges-full-badge__addtl-details hide-mobile" href="https://skillsforall.com/course/ethical-hacker">Additional Details</a>
+</div>
+<div class="cr-badges-full-badge__metadata col-12 col-md-8">
+<div class="cr-badges-full-badge__basic-info">
+<div class="cr-badges-full-badge__head-group">
+<h1 class="ac-heading ac-heading--badge-name-hero">Ethical Hacker
+</h1><div class="cr-badges-badge-issuer">
+<div class="cr-badges-badge-issuer__entity">
+Issued by
+<a href="/org/cisco">Cisco</a>
+</div>
+</div>
+
+</div>
+<p class="cr-badges-full-badge__description">
+Cisco verifies the earner of this badge successfully completed the Ethical Hacker course. The holder of this student level credential has a broad understanding of the legal and compliance requirements and is proficient in the art of scoping, executing, reporting vulnerability assessments, and recommending mitigation strategies. The holder has completed up to 34 hands-on activities using Kali Linux, WebSploit, and other tools.
+</p>
+<ul class="cr-badges-template-attributes cr-badges-template-attributes--compact hide-tablet hide-desktop">
+<li class="cr-badges-template-attributes__item">
+<span class="cr-badges-template-attributes__label">
+Type
+</span>
+<span class="cr-badges-template-attributes__value">
+Learning
+</span>
+</li>
+<li class="cr-badges-template-attributes__item">
+<span class="cr-badges-template-attributes__label">
+Level
+</span>
+<span class="cr-badges-template-attributes__value">
+Intermediate
+</span>
+</li>
+</ul>
+
+<a class="cr-badges-full-badge__addtl-details cr-badges-full-badge__addtl-details--mobile" href="https://skillsforall.com/course/ethical-hacker">Additional Details</a>
+</div>
+<div class="cr-badges-badge-skills">
+<h1 class="ac-heading ac-heading--settings-head">Skills
+</h1><ul class="cr-badges-badge-skills__skills">
+<li class="cr-badges-badge-skills__skill cr-badges-badge-skills__skill--linked">
+<a href="/skills/ethical-hacking">Ethical Hacking</a>
+</li>
+<li class="cr-badges-badge-skills__skill cr-badges-badge-skills__skill--linked">
+<a href="/skills/exploiting-applications">Exploiting Applications</a>
+</li>
+<li class="cr-badges-badge-skills__skill cr-badges-badge-skills__skill--linked">
+<a href="/skills/exploiting-networks">Exploiting Networks</a>
+</li>
+<li class="cr-badges-badge-skills__skill cr-badges-badge-skills__skill--linked">
+<a href="/skills/iot-security">IoT Security</a>
+</li>
+<li class="cr-badges-badge-skills__skill cr-badges-badge-skills__skill--linked">
+<a href="/skills/penetration-testing">Penetration Testing</a>
+</li>
+<li class="cr-badges-badge-skills__skill cr-badges-badge-skills__skill--linked">
+<a href="/skills/pentesting-tools">Pentesting Tools</a>
+</li>
+<li class="cr-badges-badge-skills__skill cr-badges-badge-skills__skill--linked">
+<a href="/skills/reporting">Reporting</a>
+</li>
+<li class="cr-badges-badge-skills__skill cr-badges-badge-skills__skill--linked">
+<a href="/skills/social-engineering">Social Engineering</a>
+</li>
+<li class="cr-badges-badge-skills__skill cr-badges-badge-skills__skill--linked">
+<a href="/skills/vulnerability-assessment">Vulnerability Assessment</a>
+</li>
+<li class="cr-badges-badge-skills__skill cr-badges-badge-skills__skill--linked">
+<a href="/skills/vulnerability-scanning">Vulnerability Scanning</a>
+</li>
+</ul>
+</div>
+
+<div class="cr-badges-earning-criteria">
+<h1 class="ac-heading ac-heading--settings-head">Earning Criteria
+</h1><ul class="cr-badges-earning-criteria__criteria">
+<li class="cr-badges-earning-criteria__criterion">
+<div class="cr-badges-earning-criterion" title="Assessment">
+<div class="ac-icon cr-badges-earning-criterion__icon">
+<svg class="ac-icon__image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M336 64h-88.6c.4-2.6.6-5.3.6-8 0-30.9-25.1-56-56-56s-56 25.1-56 56c0 2.7.2 5.4.6 8H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 32c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm160 432c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h48v20c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12V96h48c8.8 0 16 7.2 16 16v352zm-58.9-236.4c-4.7-4.7-12.3-4.7-17-.1L158.4 344.3 108 293.7c-4.7-4.7-12.3-4.7-17 0l-8.5 8.5c-4.7 4.7-4.7 12.3 0 17l67.4 67.6c4.7 4.7 12.3 4.7 17 0l134.8-133.7c4.7-4.7 4.7-12.3.1-17l-8.7-8.5z"/></svg>
+</div>
+<div class="cr-badges-earning-criterion__title">
+Passing score (70%) on Cisco Networking Academy comprehensive exam.
+</div>
+</div>
+
+</li>
+</ul>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+</div>
+
+</main><div data-container="global-search-results"></div>
+<footer class="transitional" id="footer">
+<div class="grid non-react-footer">
+<section class="l1-0 r1-0 footer-margin">
+<div class="links">
+<div class="footer-link-wrapper">
+<a class="footer-link" href="https://resources.credly.com/schedule-a-demo">Request Demo</a>
+</div>
+<div class="footer-link-wrapper">
+<a class="footer-link" href="https://info.credly.com/about-us">About Credly</a>
+</div>
+<div class="footer-link-wrapper">
+<a class="footer-link" href="https://info.credly.com/legal">Terms</a>
+</div>
+<div class="footer-link-wrapper">
+<a class="footer-link" href="https://info.credly.com/privacy-policy">Privacy</a>
+</div>
+<div class="footer-link-wrapper">
+<a class="footer-link" href="/docs">Developers</a>
+</div>
+<div class="footer-link-wrapper">
+<a class="footer-link" href="/support">Support</a>
+</div>
+</div>
+<div class="cookie-links">
+<div class="cookie-link-wrapper">
+<a class="footer-link" target="_blank" href="https://info.credly.com/cookie-policy">Cookies</a>
+</div>
+<div class="cookie-link-wrapper">
+<a class="footer-link" target="_blank" href="https://info.credly.com/cookie-policy">Do Not Sell My Personal Information</a>
+</div>
+</div>
+<div class="app-store-links">
+<a class="app-store-link app-store-link-google" href="https://play.google.com/store/apps/details?id=com.credly.android"></a>
+<a class="app-store-link app-store-link-apple" href="https://apps.apple.com/us/app/credly/id1630234370"></a>
+</div>
+</section>
+</div>
+
+<span></span>
+</footer>
+<script nonce="xjDriczlQPXM2wgaQUaGTFkmCzQ8Tzd0R9wsM6hcad4=">
+//<![CDATA[
+(function(){
+  document.addEventListener('click', function(e){
+    var eventTarget = e.target;
+    if (eventTarget.id == 'skip-to-content' || eventTarget.id == 'skip-nav'){
+      var href, target;
+      href = eventTarget.getAttribute('href').substr(1);
+      target = document.getElementById(href);
+      if (!target.getAttribute('tabindex')){
+        target.setAttribute('tabindex', '-1');
+      }
+      target.focus();
+    }
+  });
+})();
+
+
+//]]>
+</script><script nonce="xjDriczlQPXM2wgaQUaGTFkmCzQ8Tzd0R9wsM6hcad4=">
+//<![CDATA[
+(function(){
+  if (typeof(App) !== 'undefined' && App.Behaviors && App.Behaviors.TrackStat) {
+    App.Behaviors.TrackStat.init(
+      {"url":"https:\/\/stats.credly.com\/stats\/interaction","request_data":{"session_id":"e02b0aa8-710b-46dc-9fc4-98caf515f170","flexible_params_auth":["snapshot_json","stat_object_id","stat_object_type","stat_type"],"auth_version":"1.0","auth_key":"user:8d768abb-4e6a-4f38-8cb3-86dc95196f75","auth_timestamp":"1701329482","auth_signature":"347eae55aa87c15cf93595c230e377ebff50269342b4a41659b9ffc2ae419978"}},
+        null
+    );
+  }
+})();
+
+
+(function(){
+  const vals = window.initialAppValues = window.initialAppValues || {};
+  vals.locationData = {
+    allowedCountries: JSON.parse("[{\"id\":227,\"name\":\"United States\",\"zip_required\":false,\"org_state_required\":true},{\"id\":38,\"name\":\"Canada\",\"zip_required\":false,\"org_state_required\":true},{\"id\":3,\"name\":\"Afghanistan\",\"zip_required\":false},{\"id\":15,\"name\":\"Aland Islands\",\"zip_required\":false},{\"id\":6,\"name\":\"Albania\",\"zip_required\":false},{\"id\":61,\"name\":\"Algeria\",\"zip_required\":false},{\"id\":11,\"name\":\"American Samoa\",\"zip_required\":false},{\"id\":1,\"name\":\"Andorra\",\"zip_required\":false},{\"id\":8,\"name\":\"Angola\",\"zip_required\":false},{\"id\":5,\"name\":\"Anguilla\",\"zip_required\":false},{\"id\":9,\"name\":\"Antarctica\",\"zip_required\":false},{\"id\":4,\"name\":\"Antigua and Barbuda\",\"zip_required\":false},{\"id\":10,\"name\":\"Argentina\",\"zip_required\":false},{\"id\":7,\"name\":\"Armenia\",\"zip_required\":false},{\"id\":14,\"name\":\"Aruba\",\"zip_required\":false},{\"id\":13,\"name\":\"Australia\",\"zip_required\":false},{\"id\":12,\"name\":\"Austria\",\"zip_required\":false},{\"id\":16,\"name\":\"Azerbaijan\",\"zip_required\":false},{\"id\":32,\"name\":\"Bahamas\",\"zip_required\":false},{\"id\":23,\"name\":\"Bahrain\",\"zip_required\":false},{\"id\":19,\"name\":\"Bangladesh\",\"zip_required\":false},{\"id\":18,\"name\":\"Barbados\",\"zip_required\":false},{\"id\":36,\"name\":\"Belarus\",\"zip_required\":false},{\"id\":20,\"name\":\"Belgium\",\"zip_required\":false},{\"id\":37,\"name\":\"Belize\",\"zip_required\":false},{\"id\":25,\"name\":\"Benin\",\"zip_required\":false},{\"id\":27,\"name\":\"Bermuda\",\"zip_required\":false},{\"id\":33,\"name\":\"Bhutan\",\"zip_required\":false},{\"id\":29,\"name\":\"Bolivia\",\"zip_required\":false},{\"id\":30,\"name\":\"Bonaire, Sint Eustatius and Saba\",\"zip_required\":false},{\"id\":17,\"name\":\"Bosnia and Herzegovina\",\"zip_required\":false},{\"id\":35,\"name\":\"Botswana\",\"zip_required\":false},{\"id\":34,\"name\":\"Bouvet Island\",\"zip_required\":false},{\"id\":31,\"name\":\"Brazil\",\"zip_required\":false},{\"id\":105,\"name\":\"British Indian Ocean Territory\",\"zip_required\":false},{\"id\":28,\"name\":\"Brunei Darussalam\",\"zip_required\":false},{\"id\":22,\"name\":\"Bulgaria\",\"zip_required\":false},{\"id\":21,\"name\":\"Burkina Faso\",\"zip_required\":false},{\"id\":24,\"name\":\"Burundi\",\"zip_required\":false},{\"id\":115,\"name\":\"Cambodia\",\"zip_required\":false},{\"id\":47,\"name\":\"Cameroon\",\"zip_required\":false},{\"id\":51,\"name\":\"Cape Verde\",\"zip_required\":false},{\"id\":121,\"name\":\"Cayman Islands\",\"zip_required\":false},{\"id\":41,\"name\":\"Central African Republic\",\"zip_required\":false},{\"id\":209,\"name\":\"Chad\",\"zip_required\":false},{\"id\":46,\"name\":\"Chile\",\"zip_required\":false},{\"id\":48,\"name\":\"China\",\"zip_required\":false},{\"id\":53,\"name\":\"Christmas Island\",\"zip_required\":false},{\"id\":39,\"name\":\"Cocos (Keeling) Islands\",\"zip_required\":false},{\"id\":49,\"name\":\"Colombia\",\"zip_required\":false},{\"id\":117,\"name\":\"Comoros\",\"zip_required\":false},{\"id\":42,\"name\":\"Congo\",\"zip_required\":false},{\"id\":40,\"name\":\"Congo, The Democratic Republic Of The\",\"zip_required\":false},{\"id\":45,\"name\":\"Cook Islands\",\"zip_required\":false},{\"id\":50,\"name\":\"Costa Rica\",\"zip_required\":false},{\"id\":44,\"name\":\"Côte D'Ivoire\",\"zip_required\":false},{\"id\":97,\"name\":\"Croatia\",\"zip_required\":false},{\"id\":52,\"name\":\"Curaçao\",\"zip_required\":false},{\"id\":54,\"name\":\"Cyprus\",\"zip_required\":false},{\"id\":55,\"name\":\"Czech Republic\",\"zip_required\":false},{\"id\":58,\"name\":\"Denmark\",\"zip_required\":false},{\"id\":57,\"name\":\"Djibouti\",\"zip_required\":false},{\"id\":59,\"name\":\"Dominica\",\"zip_required\":false},{\"id\":60,\"name\":\"Dominican Republic\",\"zip_required\":false},{\"id\":62,\"name\":\"Ecuador\",\"zip_required\":false},{\"id\":64,\"name\":\"Egypt\",\"zip_required\":false},{\"id\":205,\"name\":\"El Salvador\",\"zip_required\":false},{\"id\":87,\"name\":\"Equatorial Guinea\",\"zip_required\":false},{\"id\":66,\"name\":\"Eritrea\",\"zip_required\":false},{\"id\":63,\"name\":\"Estonia\",\"zip_required\":false},{\"id\":68,\"name\":\"Ethiopia\",\"zip_required\":false},{\"id\":71,\"name\":\"Falkland Islands (Malvinas)\",\"zip_required\":false},{\"id\":73,\"name\":\"Faroe Islands\",\"zip_required\":false},{\"id\":70,\"name\":\"Fiji\",\"zip_required\":false},{\"id\":69,\"name\":\"Finland\",\"zip_required\":false},{\"id\":74,\"name\":\"France\",\"zip_required\":false},{\"id\":79,\"name\":\"French Guiana\",\"zip_required\":false},{\"id\":172,\"name\":\"French Polynesia\",\"zip_required\":false},{\"id\":210,\"name\":\"French Southern Territories\",\"zip_required\":false},{\"id\":75,\"name\":\"Gabon\",\"zip_required\":false},{\"id\":84,\"name\":\"Gambia\",\"zip_required\":false},{\"id\":78,\"name\":\"Georgia\",\"zip_required\":false},{\"id\":56,\"name\":\"Germany\",\"zip_required\":false},{\"id\":81,\"name\":\"Ghana\",\"zip_required\":false},{\"id\":82,\"name\":\"Gibraltar\",\"zip_required\":false},{\"id\":88,\"name\":\"Greece\",\"zip_required\":false},{\"id\":83,\"name\":\"Greenland\",\"zip_required\":false},{\"id\":77,\"name\":\"Grenada\",\"zip_required\":false},{\"id\":86,\"name\":\"Guadeloupe\",\"zip_required\":false},{\"id\":91,\"name\":\"Guam\",\"zip_required\":false},{\"id\":90,\"name\":\"Guatemala\",\"zip_required\":false},{\"id\":80,\"name\":\"Guernsey\",\"zip_required\":false},{\"id\":85,\"name\":\"Guinea\",\"zip_required\":false},{\"id\":92,\"name\":\"Guinea-Bissau\",\"zip_required\":false},{\"id\":93,\"name\":\"Guyana\",\"zip_required\":false},{\"id\":98,\"name\":\"Haiti\",\"zip_required\":false},{\"id\":95,\"name\":\"Heard and McDonald Islands\",\"zip_required\":false},{\"id\":230,\"name\":\"Holy See (Vatican City State)\",\"zip_required\":false},{\"id\":96,\"name\":\"Honduras\",\"zip_required\":false},{\"id\":94,\"name\":\"Hong Kong\",\"zip_required\":false},{\"id\":99,\"name\":\"Hungary\",\"zip_required\":false},{\"id\":107,\"name\":\"Iceland\",\"zip_required\":false},{\"id\":104,\"name\":\"India\",\"zip_required\":false},{\"id\":100,\"name\":\"Indonesia\",\"zip_required\":false},{\"id\":106,\"name\":\"Iraq\",\"zip_required\":false},{\"id\":101,\"name\":\"Ireland\",\"zip_required\":false},{\"id\":103,\"name\":\"Isle of Man\",\"zip_required\":false},{\"id\":102,\"name\":\"Israel\",\"zip_required\":false},{\"id\":108,\"name\":\"Italy\",\"zip_required\":false},{\"id\":110,\"name\":\"Jamaica\",\"zip_required\":false},{\"id\":112,\"name\":\"Japan\",\"zip_required\":false},{\"id\":109,\"name\":\"Jersey\",\"zip_required\":false},{\"id\":111,\"name\":\"Jordan\",\"zip_required\":false},{\"id\":122,\"name\":\"Kazakhstan\",\"zip_required\":false},{\"id\":113,\"name\":\"Kenya\",\"zip_required\":false},{\"id\":116,\"name\":\"Kiribati\",\"zip_required\":false},{\"id\":119,\"name\":\"Korea, Republic of\",\"zip_required\":false},{\"id\":283,\"name\":\"Kosovo\",\"zip_required\":false},{\"id\":120,\"name\":\"Kuwait\",\"zip_required\":false},{\"id\":114,\"name\":\"Kyrgyzstan\",\"zip_required\":false},{\"id\":123,\"name\":\"Lao People's Democratic Republic\",\"zip_required\":false},{\"id\":132,\"name\":\"Latvia\",\"zip_required\":false},{\"id\":124,\"name\":\"Lebanon\",\"zip_required\":false},{\"id\":129,\"name\":\"Lesotho\",\"zip_required\":false},{\"id\":128,\"name\":\"Liberia\",\"zip_required\":false},{\"id\":133,\"name\":\"Libya\",\"zip_required\":false},{\"id\":126,\"name\":\"Liechtenstein\",\"zip_required\":false},{\"id\":130,\"name\":\"Lithuania\",\"zip_required\":false},{\"id\":131,\"name\":\"Luxembourg\",\"zip_required\":false},{\"id\":145,\"name\":\"Macao\",\"zip_required\":false},{\"id\":139,\"name\":\"Madagascar\",\"zip_required\":false},{\"id\":153,\"name\":\"Malawi\",\"zip_required\":false},{\"id\":155,\"name\":\"Malaysia\",\"zip_required\":false},{\"id\":152,\"name\":\"Maldives\",\"zip_required\":false},{\"id\":142,\"name\":\"Mali\",\"zip_required\":false},{\"id\":150,\"name\":\"Malta\",\"zip_required\":false},{\"id\":140,\"name\":\"Marshall Islands\",\"zip_required\":false},{\"id\":147,\"name\":\"Martinique\",\"zip_required\":false},{\"id\":148,\"name\":\"Mauritania\",\"zip_required\":false},{\"id\":151,\"name\":\"Mauritius\",\"zip_required\":false},{\"id\":240,\"name\":\"Mayotte\",\"zip_required\":false},{\"id\":154,\"name\":\"Mexico\",\"zip_required\":false},{\"id\":72,\"name\":\"Micronesia, Federated States Of\",\"zip_required\":false},{\"id\":136,\"name\":\"Moldova, Republic of\",\"zip_required\":false},{\"id\":135,\"name\":\"Monaco\",\"zip_required\":false},{\"id\":144,\"name\":\"Mongolia\",\"zip_required\":false},{\"id\":137,\"name\":\"Montenegro\",\"zip_required\":false},{\"id\":149,\"name\":\"Montserrat\",\"zip_required\":false},{\"id\":134,\"name\":\"Morocco\",\"zip_required\":false},{\"id\":156,\"name\":\"Mozambique\",\"zip_required\":false},{\"id\":143,\"name\":\"Myanmar\",\"zip_required\":false},{\"id\":157,\"name\":\"Namibia\",\"zip_required\":false},{\"id\":166,\"name\":\"Nauru\",\"zip_required\":false},{\"id\":165,\"name\":\"Nepal\",\"zip_required\":false},{\"id\":163,\"name\":\"Netherlands\",\"zip_required\":false},{\"id\":158,\"name\":\"New Caledonia\",\"zip_required\":false},{\"id\":168,\"name\":\"New Zealand\",\"zip_required\":false},{\"id\":162,\"name\":\"Nicaragua\",\"zip_required\":false},{\"id\":159,\"name\":\"Niger\",\"zip_required\":false},{\"id\":161,\"name\":\"Nigeria\",\"zip_required\":false},{\"id\":167,\"name\":\"Niue\",\"zip_required\":false},{\"id\":160,\"name\":\"Norfolk Island\",\"zip_required\":false},{\"id\":146,\"name\":\"Northern Mariana Islands\",\"zip_required\":false},{\"id\":141,\"name\":\"North Macedonia\",\"zip_required\":false},{\"id\":164,\"name\":\"Norway\",\"zip_required\":false},{\"id\":169,\"name\":\"Oman\",\"zip_required\":false},{\"id\":175,\"name\":\"Pakistan\",\"zip_required\":false},{\"id\":182,\"name\":\"Palau\",\"zip_required\":false},{\"id\":180,\"name\":\"Palestine, State of\",\"zip_required\":false},{\"id\":170,\"name\":\"Panama\",\"zip_required\":false},{\"id\":173,\"name\":\"Papua New Guinea\",\"zip_required\":false},{\"id\":183,\"name\":\"Paraguay\",\"zip_required\":false},{\"id\":171,\"name\":\"Peru\",\"zip_required\":false},{\"id\":174,\"name\":\"Philippines\",\"zip_required\":false},{\"id\":178,\"name\":\"Pitcairn\",\"zip_required\":false},{\"id\":176,\"name\":\"Poland\",\"zip_required\":false},{\"id\":181,\"name\":\"Portugal\",\"zip_required\":false},{\"id\":179,\"name\":\"Puerto Rico\",\"zip_required\":false},{\"id\":184,\"name\":\"Qatar\",\"zip_required\":false},{\"id\":185,\"name\":\"Réunion\",\"zip_required\":false},{\"id\":186,\"name\":\"Romania\",\"zip_required\":false},{\"id\":188,\"name\":\"Russian Federation\",\"zip_required\":false},{\"id\":189,\"name\":\"Rwanda\",\"zip_required\":false},{\"id\":26,\"name\":\"Saint Barthélemy\",\"zip_required\":false},{\"id\":195,\"name\":\"Saint Helena\",\"zip_required\":false},{\"id\":118,\"name\":\"Saint Kitts And Nevis\",\"zip_required\":false},{\"id\":125,\"name\":\"Saint Lucia\",\"zip_required\":false},{\"id\":138,\"name\":\"Saint Martin\",\"zip_required\":false},{\"id\":177,\"name\":\"Saint Pierre And Miquelon\",\"zip_required\":false},{\"id\":231,\"name\":\"Saint Vincent And The Grenadines\",\"zip_required\":false},{\"id\":238,\"name\":\"Samoa\",\"zip_required\":false},{\"id\":200,\"name\":\"San Marino\",\"zip_required\":false},{\"id\":204,\"name\":\"Sao Tome and Principe\",\"zip_required\":false},{\"id\":190,\"name\":\"Saudi Arabia\",\"zip_required\":false},{\"id\":201,\"name\":\"Senegal\",\"zip_required\":false},{\"id\":187,\"name\":\"Serbia\",\"zip_required\":false},{\"id\":192,\"name\":\"Seychelles\",\"zip_required\":false},{\"id\":199,\"name\":\"Sierra Leone\",\"zip_required\":false},{\"id\":194,\"name\":\"Singapore\",\"zip_required\":false},{\"id\":206,\"name\":\"Sint Maarten\",\"zip_required\":false},{\"id\":198,\"name\":\"Slovakia\",\"zip_required\":false},{\"id\":196,\"name\":\"Slovenia\",\"zip_required\":false},{\"id\":191,\"name\":\"Solomon Islands\",\"zip_required\":false},{\"id\":202,\"name\":\"Somalia\",\"zip_required\":false},{\"id\":241,\"name\":\"South Africa\",\"zip_required\":false},{\"id\":89,\"name\":\"South Georgia and the South Sandwich Islands\",\"zip_required\":false},{\"id\":282,\"name\":\"South Sudan\",\"zip_required\":false},{\"id\":67,\"name\":\"Spain\",\"zip_required\":false},{\"id\":127,\"name\":\"Sri Lanka\",\"zip_required\":false},{\"id\":203,\"name\":\"Suriname\",\"zip_required\":false},{\"id\":197,\"name\":\"Svalbard And Jan Mayen\",\"zip_required\":false},{\"id\":207,\"name\":\"Swaziland\",\"zip_required\":false},{\"id\":193,\"name\":\"Sweden\",\"zip_required\":false},{\"id\":43,\"name\":\"Switzerland\",\"zip_required\":false},{\"id\":222,\"name\":\"Taiwan\",\"zip_required\":false},{\"id\":213,\"name\":\"Tajikistan\",\"zip_required\":false},{\"id\":223,\"name\":\"Tanzania, United Republic of\",\"zip_required\":false},{\"id\":212,\"name\":\"Thailand\",\"zip_required\":false},{\"id\":215,\"name\":\"Timor-Leste\",\"zip_required\":false},{\"id\":211,\"name\":\"Togo\",\"zip_required\":false},{\"id\":214,\"name\":\"Tokelau\",\"zip_required\":false},{\"id\":218,\"name\":\"Tonga\",\"zip_required\":false},{\"id\":220,\"name\":\"Trinidad and Tobago\",\"zip_required\":false},{\"id\":217,\"name\":\"Tunisia\",\"zip_required\":false},{\"id\":219,\"name\":\"Turkey\",\"zip_required\":false},{\"id\":216,\"name\":\"Turkmenistan\",\"zip_required\":false},{\"id\":208,\"name\":\"Turks and Caicos Islands\",\"zip_required\":false},{\"id\":221,\"name\":\"Tuvalu\",\"zip_required\":false},{\"id\":225,\"name\":\"Uganda\",\"zip_required\":false},{\"id\":224,\"name\":\"Ukraine\",\"zip_required\":false},{\"id\":2,\"name\":\"United Arab Emirates\",\"zip_required\":false},{\"id\":76,\"name\":\"United Kingdom\",\"zip_required\":false},{\"id\":226,\"name\":\"United States Minor Outlying Islands\",\"zip_required\":false},{\"id\":228,\"name\":\"Uruguay\",\"zip_required\":false},{\"id\":229,\"name\":\"Uzbekistan\",\"zip_required\":false},{\"id\":236,\"name\":\"Vanuatu\",\"zip_required\":false},{\"id\":232,\"name\":\"Venezuela, Bolivarian Republic of\",\"zip_required\":false},{\"id\":235,\"name\":\"Vietnam\",\"zip_required\":false},{\"id\":233,\"name\":\"Virgin Islands, British\",\"zip_required\":false},{\"id\":234,\"name\":\"Virgin Islands, U.S.\",\"zip_required\":false},{\"id\":237,\"name\":\"Wallis and Futuna\",\"zip_required\":false},{\"id\":65,\"name\":\"Western Sahara\",\"zip_required\":false},{\"id\":239,\"name\":\"Yemen\",\"zip_required\":false},{\"id\":242,\"name\":\"Zambia\",\"zip_required\":false},{\"id\":243,\"name\":\"Zimbabwe\",\"zip_required\":false}]"),
+    allowedStatesOrProvinces: {"United Arab Emirates":["Abu Dhabi","Dubai","Fujairah","Ras al Khaimah","Sharjah"],"Afghanistan":["Kabul"],"Albania":["Fier County","Tirana County"],"Armenia":["Kotayk Province","Yerevan"],"Argentina":["Buenos Aires","Buenos Aires Province","Cordoba","Santa Cruz Province","Santa Fe Province"],"Austria":["Carinthia","Lower Austria","Upper Austria","Vienna","Vorarlberg"],"Australia":["Australian Capital Territory","New South Wales","Queensland","South Australia","Tasmania","Victoria","Western Australia"],"Bangladesh":["Chittagong Division","Dhaka Division","Khulna Division"],"Belgium":["Brussels","Flanders","Wallonia"],"Bulgaria":["Plovdiv Province","Sofia City Province"],"Bahrain":["Capital Governorate"],"Benin":["Littoral Department"],"Bermuda":["Pembroke Parish"],"Bolivia":["Santa Cruz Department"],"Brazil":["Federal District","State of Ceará","State of Minas Gerais","State of Paraná","State of Rio Grande do Norte","State of Santa Catarina","State of São Paulo"],"Bhutan":["Thimphu"],"Botswana":["South-East District"],"Belarus":["Minsk Region","Mogilev Region"],"Canada":["Alberta","British Columbia","Manitoba","New Brunswick","Newfoundland and Labrador","Northwest Territory","Nova Scotia","Nunavut Territory","Ontario","Prince Edward Island","Quebec","Saskatchewan","Yukon"],"Congo, The Democratic Republic Of The":["Kinshasa","North-Kivu"],"Switzerland":["Canton of Bern","Geneva","Schwyz","Ticino","Zurich"],"Côte D'Ivoire":["Abidjan Autonomous District"],"Chile":["Bio Bio","Maule","Santiago Metropolitan Region"],"Cameroon":["Centre Region"],"China":["Anhui","Beijing","Fujian","Guangdong Province","Jiangsu","Shandong","Shanghai","Tianjin","Zhejiang"],"Colombia":["Antioquia","Bogota","Cundinamarca","Huila"],"Costa Rica":["Heredia Province","Provincia de Alajuela","San José Province"],"Curaçao":["Curaçao"],"Cyprus":["Famagusta","Larnaca","Limassol"],"Czech Republic":["Prague","South Moravian Region"],"Germany":["Baden-Württemberg","Bavaria","Berlin","Hamburg","Hessen","Lower Saxony","North Rhine-Westphalia","Rhineland-Palatinate","Saarland","Saxony","Schleswig-Holstein"],"Dominican Republic":["Distrito Nacional"],"Algeria":["Jijel Province","Mostaganem Province","Tlemcen Province"],"Ecuador":["Azuay","Chimborazo","Guayas","Pichincha"],"Estonia":["Harju County"],"Egypt":["Alexandria Governorate","Ash Sharqia Governorate","Cairo Governorate","Dakahlia Governorate","Giza Governorate"],"Spain":["Andalusia","Asturias","Basque Country","Canary Islands","Cantabria","Castile and León","Catalonia","Community of Madrid","Comunitat Valenciana","Galicia"],"Ethiopia":["Addis Ababa"],"Finland":["Central Finland","North Ostrobothnia","Uusimaa"],"France":["Auvergne-Rhône-Alpes","Bourgogne-Franche-Comté","Brittany","Centre-Val de Loire","Grand Est","Hauts-de-France","Île-de-France","Nouvelle-Aquitaine","Occitanie","Pays de la Loire","Provence-Alpes-Côte d'Azur"],"United Kingdom":["England","Northern Ireland","Scotland","Wales"],"Georgia":["Adjara"],"Ghana":["Central Region","Greater Accra Region","Northern Region"],"Guinea":["Conakry"],"Hong Kong":["Hong Kong Island"],"Honduras":["Francisco Morazán Department"],"Indonesia":["Banten","Bengkulu","East Java","Jakarta","Riau Islands"],"Ireland":["County Carlow","County Cork","County Dublin","County Galway","County Kildare","County Louth","County Wexford"],"Israel":["South District","Tel Aviv District"],"India":["Andhra Pradesh","Assam","Bihar","Chandigarh","Chhattisgarh","Delhi","Goa","Gujarat","Haryana","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Odisha","Puducherry","Punjab","Rajasthan","Tamil Nadu","Telangana","Telangana","Uttarakhand","Uttar Pradesh","West Bengal"],"Iraq":["Baghdad Governorate","Basra Governorate","Kurdistan Region"],"Italy":["Apulia","Campania","Emilia-Romagna","Friuli-Venezia Giulia","Lazio","Lombardy","Marche","Puglia","Sicilia","Tuscany","Umbria","Veneto"],"Jamaica":["St. Andrew Parish","Westmoreland Parish"],"Jordan":["Amman Governorate"],"Japan":["Aichi","Chiba","Fukuoka","Gunma","Ibaraki","Kanagawa","Oita","Osaka","Saitama","Tochigi","Tokyo","Yamagata"],"Kenya":["Nairobi County"],"Korea, Republic of":["Gyeonggi-do","Seoul"],"Kuwait":["Al Asimah Governate","Hawalli Governorate"],"Cayman Islands":["George Town"],"Kazakhstan":["Almaty Region","Atyrau Region"],"Lebanon":["Beirut Governorate"],"Sri Lanka":["Eastern Province","North Central Province","North Western Province","Western Province"],"Liberia":["Montserrado"],"Lithuania":["Alytus County"],"Luxembourg":["Luxembourg"],"Libya":["Tripoli District"],"Morocco":["Casablanca-Settat","Fez-Meknès","Tangier-Tétouan-Al Hoceima"],"Myanmar":["Magway Region","Yangon Region"],"Mauritius":["Port Louis District","Rivière du Rempart District"],"Maldives":["Malé"],"Malawi":["Northern Region","Southern Region"],"Mexico":["Baja California Sur","Chihuahua","Coahuila","Durango","Guanajuato","Jalisco","Mexico City","Michoacán","Nuevo Leon","Oaxaca","Puebla","Querétaro","Quintana Roo","San Luis Potosi","Sonora","State of Mexico","Tabasco"],"Malaysia":["Federal Territory of Kuala Lumpur","Kedah","Negeri Sembilan","Perak","Selangor"],"Nigeria":["Akwa Ibom","Delta","Enugu","Federal Capital Territory","Gombe","Imo","Kaduna","Lagos","Niger","Oyo","Rivers"],"Netherlands":["Gelderland","Limburg","North Brabant","North Holland","Overijssel","South Holland","Utrecht"],"Norway":["Oslo","Rogaland","Trøndelag","Viken"],"Nepal":["Bagmati Province"],"New Zealand":["Auckland","Bay of Plenty","Canterbury","Hawke's Bay","Waikato","Wellington"],"Oman":["Ad Dakhiliyah ‍Governorate","Al Batinah North Governorate","Muscat Governorate"],"Panama":["Panamá Province"],"Peru":["Callao Region"],"Philippines":["Bicol","Calabarzon","Central Luzon","Central Visayas","Davao Region","Ilocos Region","Metro Manila","Western Visayas"],"Pakistan":["Balochistan","Islamabad Capital Territory","Khyber Pakhtunkhwa","Punjab","Sindh"],"Poland":["Lesser Poland Voivodeship","Łódź Voivodeship","Lower Silesian Voivodeship","Lublin Voivodeship","Masovian Voivodeship","Podkarpackie Voivodeship","Pomeranian Voivodeship","Silesian Voivodeship"],"Puerto Rico":["San Juan","San Lorenzo"],"Portugal":["Aveiro District","Braga","Guarda District","Lisbon","Porto District"],"Palau":["Koror"],"Paraguay":["Alto Paraná Department"],"Qatar":["Al Daayen Municipality","Al Wakrah Municipality","Doha","Doha Municipality"],"Romania":["Bucharest","Cluj County","Timiș"],"Serbia":["Vojvodina"],"Russian Federation":["Moscow"],"Rwanda":["Kigali City"],"Saudi Arabia":["Al Madinah Province","Al Qassim Province","Aseer Province","Eastern Province","Jazan Province","Makkah Province","Northern Borders Province","Riyadh Province","Tabuk Province"],"Sweden":["Jonkoping County","Örebro County","Östergötland County","Skåne County","Stockholm County","Uppsala County","Västra Götaland County"],"Slovakia":["Košice Region"],"Sierra Leone":["Western Area"],"Senegal":["Dakar Region"],"Somalia":["Lower Juba"],"El Salvador":["Cuscatlán Department"],"Thailand":["Bangkok","Chiang Mai","Nong Khai","Nonthaburi"],"Tunisia":["Nabeul Governorate"],"Turkey":["Ankara","Antalya","İstanbul","İzmir","Muğla","Uşak"],"Taiwan":["Taoyuan City"],"Ukraine":["Kharkiv Oblast","Kyiv city","Lviv Oblast","Zhytomyr Oblast"],"Uganda":["Central Region","Eastern Region"],"United States":["Alabama","Alaska","American Samoa","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Guam","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Marshall Islands","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Palau","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","U.S. Virgin Islands","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"],"Uruguay":["Montevideo Department"],"Venezuela, Bolivarian Republic of":["Lara"],"Vietnam":["Da Nang","Hanoi","Ho Chi Minh City","Soc Trang"],"Yemen":["Ibb Governorate"],"South Africa":["Eastern Cape","Gauteng","KwaZulu-Natal","Limpopo","Mpumalanga","Western Cape"],"Zambia":["Lusaka Province"],"Zimbabwe":["Harare Province","Mashonaland East Province","Masvingo Province"]},
+    country: ""
+  };
+
+  vals.available_locales = {
+   allowedLanguages : [{"code":"en","name":"English"},{"code":"fr","name":"French"},{"code":"fr-CA","name":"French (Canada)"},{"code":"de","name":"German"},{"code":"ja","name":"Japanese"},{"code":"ko","name":"Korean"},{"code":"pt","name":"Portuguese"},{"code":"pt-BR","name":"Portuguese (Brazil)"},{"code":"zh-CN","name":"Simplified Chinese"},{"code":"es-ES","name":"Spanish (Spain)"},{"code":"es-US","name":"Spanish (US)"}]
+ };
+
+  vals.cdnHost = "cdn.credly.com" || document.location.host;
+  vals.env = 'production';
+  vals.faethm = {
+    ontology_mapping_url: "https://app.faethm.ai/ontology-mapping/"
+  };
+  vals.frontendDebug = false
+
+  vals.alerts = JSON.parse("{\"flashes\":[]}").flashes;
+
+  vals.share = {
+    facebookClientId: "126857714151516",
+    ziprecruiter: {
+      url: "https://www.ziprecruiter.com/credly",
+      appName: "ZipRecruiter"
+    }
+  };
+
+  vals.sso = {
+      apple: {
+          clientId: "com.credly.signinwithappleservicesid"
+      },
+      google: { clientId: "40778611547-2akc17g7rv7l4n0gfs8m9ogcn12rvl47.apps.googleusercontent.com" },
+      microsoft: {
+        clientId: "",
+        tenantId: "54e44946-b280-4ccf-b102-2224d7008f17"
+      }
+  }
+
+  vals.features = [];
+  []
+    .forEach(function(f) {vals.features.push(f);});
+  vals.abTests = {};
+
+  vals.config = {
+    sizedImages: true,
+    startingOauth: false,
+    oauthAppId: ''
+  };
+
+  vals.tracking = JSON.parse(
+    "{\"url\":\"https://stats.credly.com/stats/interaction\",\"refresh_url\":\"/stat_signatures/interaction\",\"request_data\":{\"session_id\":\"e02b0aa8-710b-46dc-9fc4-98caf515f170\",\"flexible_params_auth\":[\"snapshot_json\",\"stat_object_id\",\"stat_object_type\",\"stat_type\"],\"auth_version\":\"1.0\",\"auth_key\":\"user:8d768abb-4e6a-4f38-8cb3-86dc95196f75\",\"auth_timestamp\":\"1701329482\",\"auth_signature\":\"347eae55aa87c15cf93595c230e377ebff50269342b4a41659b9ffc2ae419978\"}}"
+  );
+
+
+    vals.currentUser = { anonymous: true };
+
+  const prerenderData = window.prerenderData = window.prerenderData || {};
+    prerenderData[{"a":"/v1/public_badges/842cfad1-67af-4ebc-9103-23b8218ca82d"}.a] =
+      JSON.parse({"a":"{\"data\":{\"id\":\"842cfad1-67af-4ebc-9103-23b8218ca82d\",\"expires_at_date\":null,\"issued_at_date\":\"2023-11-01\",\"issued_to\":\"RAHUL KUMAR R\",\"locale\":\"en\",\"public\":true,\"state\":\"accepted\",\"translate_metadata\":false,\"accepted_at\":\"2023-11-01T14:49:39.549+05:30\",\"expires_at\":null,\"issued_at\":\"2023-11-01T14:49:39.000+05:30\",\"last_updated_at\":\"2023-11-01T14:49:39.563+05:30\",\"updated_at\":\"2023-11-01T14:49:39.563+05:30\",\"earner_path\":\"/users/rahul-kumar-r.d421c522\",\"earner_photo_url\":null,\"is_private_badge\":false,\"user_is_earner\":false,\"issuer\":{\"summary\":\"issued by Cisco\",\"entities\":[{\"label\":\"Issued by\",\"primary\":true,\"entity\":{\"type\":\"Organization\",\"id\":\"74381078-44ac-4581-8471-36bd1ce495b7\",\"name\":\"Cisco\",\"url\":\"https://www.credly.com/api/v1/organizations/74381078-44ac-4581-8471-36bd1ce495b7\",\"vanity_url\":\"https://www.credly.com/org/cisco\",\"internationalize_badge_templates\":false,\"share_to_ziprecruiter\":true,\"verified\":false}}]},\"badge_template\":{\"id\":\"2aff6d71-ae6f-44cb-a8ec-5349f807d49b\",\"description\":\"Cisco verifies the earner of this badge successfully completed the Ethical Hacker course. The holder of this student level credential has a broad understanding of the legal and compliance requirements and is proficient in the art of scoping, executing, reporting vulnerability assessments, and recommending mitigation strategies. The holder has completed up to 34 hands-on activities using Kali Linux, WebSploit, and other tools.\",\"global_activity_url\":\"https://skillsforall.com/course/ethical-hacker\",\"earn_this_badge_url\":null,\"enable_earn_this_badge\":false,\"enable_detail_attribute_visibility\":true,\"name\":\"Ethical Hacker\",\"public\":true,\"recipient_type\":\"User\",\"vanity_slug\":\"ethical-hacker\",\"show_badge_lmi\":false,\"show_skill_tag_links\":true,\"translatable\":false,\"level\":\"Intermediate\",\"time_to_earn\":null,\"cost\":null,\"type_category\":\"Learning\",\"image\":{\"id\":\"242902b5-f527-42ad-865e-977c9e1b5b58\",\"url\":\"https://images.credly.com/images/242902b5-f527-42ad-865e-977c9e1b5b58/image.png\"},\"image_url\":\"https://images.credly.com/images/242902b5-f527-42ad-865e-977c9e1b5b58/image.png\",\"url\":\"https://www.credly.com/org/cisco/badge/ethical-hacker\",\"owner_vanity_slug\":\"cisco\",\"badge_template_earnable\":false,\"issuer\":{\"summary\":\"issued by Cisco\",\"entities\":[{\"label\":\"Issued by\",\"primary\":true,\"entity\":{\"type\":\"Organization\",\"id\":\"74381078-44ac-4581-8471-36bd1ce495b7\",\"name\":\"Cisco\",\"url\":\"https://www.credly.com/api/v1/organizations/74381078-44ac-4581-8471-36bd1ce495b7\",\"vanity_url\":\"https://www.credly.com/org/cisco\",\"internationalize_badge_templates\":false,\"share_to_ziprecruiter\":true,\"verified\":false}}]},\"alignments\":[],\"badge_template_activities\":[{\"id\":\"70c26198-1a0e-4b67-a83d-ddc49b5d6709\",\"activity_type\":\"Assessment\",\"required_badge_template_id\":null,\"title\":\"Passing score (70%) on Cisco Networking Academy comprehensive exam.\",\"url\":null}],\"endorsements\":[],\"skills\":[{\"id\":\"7d1c5e2d-bd62-4960-b333-29b7f039fb9a\",\"name\":\"Ethical Hacking\",\"vanity_slug\":\"ethical-hacking\"},{\"id\":\"811fb0a0-0726-4391-aacf-094c517487de\",\"name\":\"Exploiting Applications\",\"vanity_slug\":\"exploiting-applications\"},{\"id\":\"8f07675d-c3ff-42a0-9573-c9c41fce2492\",\"name\":\"Exploiting Networks\",\"vanity_slug\":\"exploiting-networks\"},{\"id\":\"305b0cc9-4f74-42af-ab5f-9d0dd9fd4249\",\"name\":\"IoT Security\",\"vanity_slug\":\"iot-security\"},{\"id\":\"81fbc7bf-4592-4a48-839f-44337ff68981\",\"name\":\"Penetration Testing\",\"vanity_slug\":\"penetration-testing\"},{\"id\":\"0e885302-2ab7-4b45-8244-2706dd7eb760\",\"name\":\"Pentesting Tools\",\"vanity_slug\":\"pentesting-tools\"},{\"id\":\"72386d9d-d626-4ec7-9212-d469c4da3185\",\"name\":\"Reporting\",\"vanity_slug\":\"reporting\"},{\"id\":\"f0837df6-ebe1-4638-be53-fc6bdbb00e2f\",\"name\":\"Social Engineering\",\"vanity_slug\":\"social-engineering\"},{\"id\":\"3f8906ee-3c3f-411b-8fe5-0a4405f38dbc\",\"name\":\"Vulnerability Assessment\",\"vanity_slug\":\"vulnerability-assessment\"},{\"id\":\"2a72ed4e-f0e3-446a-b474-fb063799bf5d\",\"name\":\"Vulnerability Scanning\",\"vanity_slug\":\"vulnerability-scanning\"}]},\"image\":{\"id\":\"242902b5-f527-42ad-865e-977c9e1b5b58\",\"url\":\"https://images.credly.com/images/242902b5-f527-42ad-865e-977c9e1b5b58/image.png\"},\"image_url\":\"https://images.credly.com/images/242902b5-f527-42ad-865e-977c9e1b5b58/image.png\",\"evidence\":[],\"recommendations\":[]},\"metadata\":{}}"}.a);
+})();
+
+
+//]]>
+</script><script src="https://cdn.credly.com/packs/js/vendor-52b321cbbda4dafec2ac-1_0.chunk.js" crossorigin="anonymous"></script>
+<script src="https://cdn.credly.com/packs/js/application-c3f9ae1b796d0f8cac3f-1_0.js" crossorigin="anonymous"></script>
+<script src="https://cdn.credly.com/packs/js/header-ad30fddc33378ca25669-1_0.chunk.js" crossorigin="anonymous"></script>
+<script src="https://cdn.credly.com/packs/js/badges-public_badge-9b9c7008afe1f31f8f79-1_0.chunk.js" crossorigin="anonymous"></script>
+<script src="https://cdn.credly.com/packs/js/badges-0e769e21017a09006a8f-1_0.chunk.js" crossorigin="anonymous" async="async"></script>
+</body>
+</html>
